@@ -1,34 +1,43 @@
 package drive;
 public class OutputQueue extends Queue{
 
+    // adds item to end of queue
     @Override
     public void enqueue(String data) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'enqueue'");
+       this.append(data);
     }
 
+    // retunrs and removes head node
     @Override
     public Node dequeue() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'dequeue'");
+        Node qNode = this.Head;
+        this.removeHead();
+        return qNode;
     }
 
+    // returns but does not remove head node
     @Override
     public Node peek() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'peek'");
+       return this.Head;
     }
 
+    // checks if head is empty or not
     @Override
     public boolean isEmpty(){
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isEmpty'");
+        if(this.Head == null)
+    	{
+    		return true;
+    	}
+        else
+        {
+            return false;
+        ]
     }
 
+        // reutns size
     @Override
     public int getLength(){
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getLength'");
+        return this.Size;
     }
     
 }
