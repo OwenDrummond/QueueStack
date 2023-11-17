@@ -20,7 +20,8 @@ public class OpStack extends Stack {
     public Node peek() {
         return this.Head;
     }
-    
+
+    // checks if head node is empty
     @Override
     public abstract boolean isEmpty()
     {
@@ -28,12 +29,17 @@ public class OpStack extends Stack {
     	{
     		return true;
     	}
+        else
+        {
+            return false;
+        }
     }
-    
+
+    // returns size
     @Override
     public static int GetLength()
     {
-    	
+    	return this.Size;
     }
     
 }
