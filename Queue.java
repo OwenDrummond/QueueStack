@@ -5,4 +5,8 @@ public abstract class Queue extends LinkedList {
     public abstract Node dequeue();
 
     public abstract Node peek();
+
+    public abstract boolean isEmpty();
+
+    public abstract int getLength();
 }
